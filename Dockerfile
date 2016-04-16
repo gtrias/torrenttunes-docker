@@ -5,6 +5,4 @@ WORKDIR /app
 RUN \
     wget https://github.com/tchoulihan/torrenttunes-client/releases/download/0.7.8/torrenttunes-client.jar
 
-EXPOSE 4568
-
-ENTRYPOINT nohup java -jar torrenttunes-client.jar -nobrowser
+ENTRYPOINT nohup java -jar torrenttunes-client.jar
